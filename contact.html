@@ -1,206 +1,124 @@
-Claude
-daz-paints-main.zip
-daz-paints-main.zip
-ZIP
-so this is the webste for the company and what they want is they now on;y want paint as their product so we need to remove other products and let the paint as their product , kindly chnage the code where ever necessary to match the overall picture make some changes in the index page too , now adverstise only about the paints
-
-Ran 9 commands, read 2 files, shared files
-The site is now paint-only, and I’ve packaged the updated project as daz-paints-main.zip. I checked the new index page in a browser. The only thing I couldn’t see was the icons, because they load from the internet.
-
-Removed
-
-I deleted contruction.html, mep.html and infrastructure.html.
-The menu on every page now reads Home · Paints · Contact Us, so nothing links to a deleted page.
-Index page
-
-Hero: it now reads “Premium Paints & Coatings for Every Surface”. It has two buttons, “Explore Our Paints” and “Get a Quote”, and a colour-swatch strip along the bottom.
-Paint Range: this replaces the old “Product Lines”. There are four cards (Decorative, Protective, Floor, Marine), each listing its products and linking straight to that section of the paints page.
-Why Choose Daz Paints: this is a new section with four points: built for the GCC climate, one-stop paint solutions, project-to-project supply, and expert technical support. All four come from claims already on your site.
-About and stats: the text now talks only about paints. “Main Business Lines: 4” became “Paint Categories: 4”, and “100+ Product Categories” became “16 Paint & Coating Products”, which is the actual number on the paints page.
-Contact section and mobile menu: the contact call-to-action now asks about a “Painting Project”. I also fixed the index page’s mobile menu so it behaves like the one on the other pages.
-Paints page
-
-Each category now has an anchor, so the cards on the home page jump to the right place.
-I fixed a broken icon on the “Underwater Coatings” card.
-Contact page
-
-The intro, the “Technical Support” card and the closing text no longer mention construction, MEP or infrastructure.
-The form dropdown now offers Decorative, Protective, Floor and Marine paints instead of the old service lines. The submit address is unchanged.
-Please check
-
-The new tagline, “Colour That Lasts. Protection That Performs.”, is my own wording, so swap in your own slogan if you prefer.
-I kept the company name “Daz Paints Coating & Contracting Services” in the header and footer, since it’s the registered name. If “Contracting” should go too, it’s a quick find-and-replace.
-The 16-product count includes the one commented-out “Marine Infrastructure Coatings” card on the paints page, which I did not count.
-Because the site is hosted on GitHub Pages, you’ll need to delete the three old files from the repository as well. Otherwise the old pages stay reachable by direct link.
-
-Daz paints main
-ZIP 
-
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Contact Us - DPCS</title> <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"> <link href="http
-
-pasted
-
-the contact info is coming to the right part and i want it on the centre
-
-Tracing a leftover script error from the removed form
-Since the form is gone, the contact card was left sitting in one half of a two-column grid. I’ll make that grid a single centred column and remove the leftover form script, which would throw an error now that the form doesn’t exist.
-
-Ran a command, shared files
-I’ve centred the “Get In Touch” card on the contact page, and I’ve attached the updated contact.html to replace the old one. On a 1280px-wide screen its middle sits at exactly 640px, the middle of the page.
-
-Cause: the content area was a two-column grid made for the card plus the form. With the form removed, the card stayed in one column and the other half sat empty.
-Fix: it’s now a single column, 700px wide and centred. On mobile it still fills the width.
-Form script removed: the page still had the script that handled the form, and it would have caused a JavaScript error now that the form is gone. I deleted it, so the page loads cleanly. The only error I saw while testing was the missing animation library, which is just the sandbox having no internet.
-Animation: the card now fades up instead of sliding in from the left, since it’s centred.
-With the form removed, enquiries can only come in through the phone numbers and email addresses on the page. If you want the form back later, I can add it below the card so it stays centred.
-
-
-Contact
-Code · HTML 
-
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Contact — Triden Holdings</title> <link rel="stylesheet" href="styles.css"> </head> <body> <header> <div class="container header-inner"> <a
-
-pasted
-
-here also do one thing emove the form and create a button to send inquiry and which will open the mailer app in their system , and also remove the head office and leave office of oman only
-
-Created a file, shared files
-I’ve updated this Triden Holdings contact page and attached it as triden/contact.html. I saved it in its own folder so it doesn’t overwrite the Daz Paints contact page from earlier.
-
-Form removed: the inquiry form, its Formspree link and the status message are gone.
-New button: “Send Inquiry →” now opens the visitor’s email app with a message addressed to info@tridenholdings.com. The subject is “Website Inquiry — Triden Holdings”, and the body has blank Name, Company, Phone and Inquiry lines to fill in. It uses the same button styling as before, so it should look like the rest of the site.
-Offices: only the Muscat, Oman office remains. The other cards in your file were already blank, so I deleted the empty gaps. The heading now says “Our Office” instead of “Our Offices”.
-Wording: the paragraph above the button now explains that clicking it opens their email app.
-I couldn’t see script.js. If it has code that looks up inquiry-form or form-status, which no longer exist, it will throw a console error. Check it and remove or guard that code if so.
-
-
-Contact
-Code · HTML 
-
-
-
-
-
-Claude is AI and can make mistakes. Please double-check responses.
-
-
-Contact · HTML
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Triden Holdings</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Triden Holdings</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
- 
-<header>
-  <div class="container header-inner">
-    <a href="index.html" class="logo">TRIDEN <span>HOLDINGS</span></a>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="active">Contact</a>
-      <a href="contact.html" class="nav-cta">Get in Touch</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-  </div>
-</header>
- 
-<main>
-  <section class="page-header reveal">
-    <div class="container">
-      <div class="eyebrow"><div class="line"></div><span>Get in Touch</span></div>
-      <h1>Let's Talk.</h1>
-      <p>Whether you have a project to discuss, a supply requirement, or simply want to learn more about what Triden Holdings can do for you — we're ready to listen.</p>
+
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">TRIDEN <span>HOLDINGS</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="nav-cta">Get in Touch</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
-  </section>
- 
-  <section class="section bg-dark">
-    <div class="container">
-      <div class="contact-wrap">
-        <div class="reveal">
-          <div class="eyebrow"><div class="line"></div><span>Inquiry</span></div>
-          <h2 style="font-size:1.8rem;">Send Us an Inquiry</h2>
-          <p style="margin-bottom:2rem;">Click the button below and your email app will open with a message ready to go. Add your details and the right team will be in touch within one business day.</p>
- 
-          <a href="mailto:info@tridenholdings.com?subject=Website%20Inquiry%20%E2%80%94%20Triden%20Holdings&amp;body=Hello%20Triden%20Holdings%2C%0D%0A%0D%0AName%3A%20%0D%0ACompany%3A%20%0D%0APhone%3A%20%0D%0A%0D%0AInquiry%3A%20%0D%0A"
-             class="btn btn-primary submit-btn">Send Inquiry →</a>
+  </header>
+
+  <main>
+    <section class="page-header reveal">
+      <div class="container">
+        <div class="eyebrow">
+          <div class="line"></div><span>Get in Touch</span>
         </div>
- 
-        <div class="reveal">
-          <div class="eyebrow"><div class="line"></div><span>Our Office</span></div>
-          <div class="offices-grid" style="margin-top:2rem;">
- 
-            <div class="office-card">
-              <h4>Muscat</h4>
-              <div class="office-country">Sultanate of Oman</div>
-              <div class="office-role">Construction &amp; Product Supply</div>
-              <p>Ghala, Muscat, Sultanate of Oman</p>
-              <p>+968 9127 0101 · +968 9400 3653 · +968 9597 6568</p>
-              <p>info@tridenholdings.com</p>
+        <h1>Let's Talk.</h1>
+        <p>Whether you have a project to discuss, a supply requirement, or simply want to learn more about what Triden
+          Holdings can do for you — we're ready to listen.</p>
+      </div>
+    </section>
+
+    <section class="section bg-dark">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="reveal">
+            <div class="eyebrow">
+              <div class="line"></div><span>Inquiry</span>
             </div>
- 
+            <h2 style="font-size:1.8rem;">Send Us an Inquiry</h2>
+            <p style="margin-bottom:2rem;">Click the button below and your email app will open with a message ready to
+              go. Add your details and the right team will be in touch within one business day.</p>
+
+            <a href="mailto:info@tridenholdings.com?subject=Website%20Inquiry%20%E2%80%94%20Triden%20Holdings&amp;body=Hello%20Triden%20Holdings%2C%0D%0A%0D%0AName%3A%20%0D%0ACompany%3A%20%0D%0APhone%3A%20%0D%0A%0D%0AInquiry%3A%20%0D%0A"
+              class="btn btn-primary submit-btn">Send Inquiry →</a>
+          </div>
+
+          <div class="reveal">
+            <div class="eyebrow">
+              <div class="line"></div><span>Our Office</span>
+            </div>
+            <div class="offices-grid" style="margin-top:2rem;">
+
+              <div class="office-card">
+                <h4>Muscat</h4>
+                <div class="office-country">Sultanate of Oman</div>
+                <div class="office-role">Construction &amp; Product Supply</div>
+                <p>Ghala, Muscat, Sultanate of Oman</p>
+                <p>+968 9127 0101 · +968 9400 3653 · +968 9597 6568</p>
+                <p>info@tridenholdings.com</p>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top"></div>
+    <div class="container footer-grid">
+      <div>
+        <div class="logo" style="font-size:1.1rem; margin-bottom:1.2rem;">TRIDEN <span>HOLDINGS</span></div>
+        <p class="footer-desc">A diversified holding company delivering excellence across construction, trade, and
+          global commerce.</p>
+        <div class="footer-rule"></div>
+      </div>
+      <div>
+        <h4>Our Divisions</h4>
+        <ul>
+          <li><a href="services.html">Construction &amp; Contracting</a></li>
+          <li><a href="services.html">Trading &amp; Services</a></li>
+          <li><a href="services.html">Import &amp; Export</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li class="contact-item">tridenholdings.com</li>
+          <li class="contact-item">info@tridenholdings.com</li>
+          <li class="contact-item small">Serving clients across the Middle East,<br>Africa, and global markets.</li>
+        </ul>
+      </div>
     </div>
-  </section>
-</main>
- 
-<footer>
-  <div class="footer-top"></div>
-  <div class="container footer-grid">
-    <div>
-      <div class="logo" style="font-size:1.1rem; margin-bottom:1.2rem;">TRIDEN <span>HOLDINGS</span></div>
-      <p class="footer-desc">A diversified holding company delivering excellence across construction, trade, and global commerce.</p>
-      <div class="footer-rule"></div>
+    <div class="container footer-bottom">
+      <p>© 2026 Triden Holdings. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
     </div>
-    <div>
-      <h4>Our Divisions</h4>
-      <ul>
-        <li><a href="services.html">Construction &amp; Contracting</a></li>
-        <li><a href="services.html">Trading &amp; Services</a></li>
-        <li><a href="services.html">Import &amp; Export</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <ul>
-        <li class="contact-item">tridenholdings.com</li>
-        <li class="contact-item">info@tridenholdings.com</li>
-        <li class="contact-item small">Serving clients across the Middle East,<br>Africa, and global markets.</li>
-      </ul>
-    </div>
-  </div>
-  <div class="container footer-bottom">
-    <p>© 2026 Triden Holdings. All rights reserved.</p>
-    <div class="footer-legal">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-    </div>
-  </div>
-</footer>
- 
-<script src="script.js"></script>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
- 
-
-
-
-
-
-Claude finished the response
