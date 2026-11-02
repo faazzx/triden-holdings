@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#26231a"/><stop offset="1" stop-color="#0d0c09"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E0BC60"/><stop offset="1" stop-color="#8f7430"/></linearGradient>
+<linearGradient id="steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9c9c9"/><stop offset="1" stop-color="#5d5d5d"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a4a4a"/><stop offset="1" stop-color="#222"/></linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8b5a2b"/><stop offset="1" stop-color="#5e3a18"/></linearGradient></defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<ellipse cx="200" cy="262" rx="140" ry="9" fill="#000" opacity=".35"/>
+<rect x="70" y="50" width="110" height="200" fill="url(#steel)" /><rect x="90" y="70" width="70" height="70" fill="none" stroke='#444' stroke-width='3'/><rect x="90" y="160" width="70" height="70" fill="none" stroke='#444' stroke-width='3'/><rect x="165" y="150" width="8" height="30" fill="#222" /><rect x="220" y="50" width="110" height="200" fill="url(#wood)" /><rect x="240" y="70" width="70" height="70" fill="none" stroke='#3b2410' stroke-width='3'/><rect x="240" y="160" width="70" height="70" fill="none" stroke='#3b2410' stroke-width='3'/><rect x="235" y="150" width="8" height="30" fill="#C9A84C" /></svg>

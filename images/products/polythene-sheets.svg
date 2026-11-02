@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#26231a"/><stop offset="1" stop-color="#0d0c09"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E0BC60"/><stop offset="1" stop-color="#8f7430"/></linearGradient>
+<linearGradient id="steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9c9c9"/><stop offset="1" stop-color="#5d5d5d"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a4a4a"/><stop offset="1" stop-color="#222"/></linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8b5a2b"/><stop offset="1" stop-color="#5e3a18"/></linearGradient></defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<ellipse cx="200" cy="262" rx="140" ry="9" fill="#000" opacity=".35"/>
+<polygon points="60,220 120,100 340,90 300,220" fill="#9fc7d8" opacity='.55' stroke='#cfe7f0' stroke-width='2'/><polygon points="60,220 100,225 150,215 300,220" fill="#6f9db0" opacity='.5'/><path d="M120 100 q60 40 40 100 M200 95 q30 60 10 120 M270 92 q-10 60 20 125" fill="none" stroke="#fff" stroke-width="2" opacity=".45"/><rect x="300" y="150" width="60" height="100" fill="#555" /><rect x="300" y="150" width="60" height="100" fill="none" stroke='#888' stroke-width='3'/></svg>
